@@ -2,7 +2,7 @@ const mockItems = [
   {
     id: 1,
     customerid: 0,
-    date: '2016/08/17',
+    date: '2016-08-17',
     time: '10:00',
     name: 'name',
     surname: 'surname'
@@ -10,7 +10,7 @@ const mockItems = [
   {
     id: 2,
     customerid: 0,
-    date: '2016/08/17',
+    date: '2016-08-17',
     time: '11:40',
     name: 'name',
     surname: 'surname'

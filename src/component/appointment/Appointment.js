@@ -46,7 +46,7 @@ const createAppointmentComponent = ({
       this.appointmentModel.add({
         id: +new Date(),
         customerid: this.customerId,
-        date: [nextWeek.getFullYear(), nextWeek.getMonth(), nextWeek.getDate()].join('.'),
+        date: [nextWeek.getFullYear(), nextWeek.getMonth(), nextWeek.getDate()].join('-'),
         time: new Date().getHours() + ':' + new Date().getMinutes(),
         name: user.name,
         surname: user.surname
