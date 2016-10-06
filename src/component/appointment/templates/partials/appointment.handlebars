@@ -1,0 +1,41 @@
+{{^items}}
+    No items
+{{/items}}
+{{#if items}}
+    <table class="appointments__list">
+        <thead>
+        <tr>
+            <td>Id</td>
+            <td>Date</td>
+            <td>Time</td>
+            <td>Name</td>
+            <td>Last Name</td>
+            <td>Action</td>
+        </tr>
+        </thead>
+        <tbody>
+            {{#items}}
+                <tr>
+                    <td class="appointments__item">
+                        {{id}}
+                    </td>
+                    <td>
+                        <p>{{date}}</p>
+                    </td>
+                    <td>
+                        <p>{{time}}</p>
+                    </td>
+                    <td>
+                        <p>{{name}}</p>
+                    </td>
+                    <td>
+                        <p>{{surname}}</p>
+                    </td>
+                    <td>
+                        <a id="{{id}}" href="#" class="delete-js">Delete</a>
+                    </td>
+                </tr>
+            {{/items}}
+        </tbody>
+    </table>
+{{/if}}

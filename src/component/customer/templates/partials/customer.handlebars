@@ -1,0 +1,37 @@
+{{^items}}
+    No items
+{{/items}}
+{{#if items}}
+    <table class="customers__list">
+        <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Last name</td>
+            <td>Birthday</td>
+            <td>Action</td>
+        </tr>
+        </thead>
+        <tbody>
+        {{#items}}
+            <tr class="customers__item">
+                <td>
+                    <span class="customers__item__id">{{id}}</span>
+                </td>
+                <td>
+                    {{{name}}}
+                </td>
+                <td>
+                    {{{surname}}}
+                </td>
+                <td>
+                    {{{birthday}}}
+                </td>
+                <td>
+                    <a href="/appointment/customer/{{id}}" class="button">New appointment</a>
+                </td>
+            </tr>
+        {{/items}}
+        </tbody>
+    </table>
+{{/if}}

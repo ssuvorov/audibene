@@ -1,0 +1,114 @@
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  min-height: 100%;
+  background: #563d7c;
+  color: #fff;
+}
+
+*,
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+
+/* ---- TODO: move to button.sass --------- */
+.button {
+  min-width: 100px;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  margin: 0;
+  border-radius: .25rem;
+  background: #f0ad4e;
+  color: #fff;
+}
+
+.button[disabled] {
+  opacity: .5;
+}
+
+/* ---- TODO: move to type.sass --------- */
+h1,
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+a {
+  color: #aed;
+  text-decoration: none;
+}
+
+.tabs {
+  width: 800px;
+  margin: 50px auto;
+}
+
+.tabs__list {
+  margin: 0;
+  padding: 0;
+}
+
+.tabs__item {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.tabs__link {
+  display: block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #fff;
+}
+
+.tabs__content {
+  margin-top: -1px;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+.appointments header h2,
+.customers header h2 {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+thead {
+  border-bottom: 1px solid rgba(255,255,255, .75);
+}
